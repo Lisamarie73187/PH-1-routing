@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import {Route, Link} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom';
+import Home from './Home/Home';
+import About from './About/About';
+import People from './People/People';
 
 class App extends Component {
   render() {
@@ -11,9 +14,9 @@ class App extends Component {
             <Link to="/about">About</Link>
             <Link to="/people">People</Link>
         </div>
-        <Route exact path= "/" render={()=> <div>Home</div> }/>
-        <Route path= "/About" render={()=><div>About</div>}/>
-        <Route path= "/People" render={()=><div>People</div>}/>
+        <Route exact path= "/" component={Home}/>
+        <Route path= "/About" component={About}/>
+        <Route path= "/People" component={People}/>
       </div>
     );
   }
