@@ -7,3 +7,10 @@ body {
 * > a + a {
   margin-left: 20px;
 }
+
+.red{
+  color: red;
+}
+.blue{ 
+  color: rgb(26, 212, 66);
+}
